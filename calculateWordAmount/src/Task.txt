@@ -1,0 +1,34 @@
+Implement Java application which loads the text file, calculates word statistic and exports the result to XML
+Import and output file has to be defined like program parameter from command line.
+Apply correct patterns typical for object-oriented programming (OOP) - decomposition and reusability.
+Loading and exporting of files has to be done in buffered way - use BufferedReader or BufferedInputStream
+Focus also on correct exception handling
+Decide right place where to catch exception and apply correct behavior in case of exception
+Define XML Schema for output XML format and use JAXB technology for generating of the export XML file
+Use java classes generated via xjc tool
+
+text file example
+Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java.
+
+XML output example
+
+<?xml version='1.0' encoding='UTF-8'?>
+<statistics>
+  <word>
+    <value>Java</value>
+    <count>3</value>
+  </word>
+  <word>
+    <value>is</value>
+    <count>1</count>
+  </word>
+</statistics>
+
+TextFileLoader
+CalculateWordStatistic
+ExportTextFile
+CreateXmlFromResults
+CommandlineArgumentProcessor
+
+JaxB for XML
+XJC Tool für das erstellen der Java Klassen
