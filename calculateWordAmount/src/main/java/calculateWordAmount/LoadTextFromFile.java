@@ -17,6 +17,8 @@ public class LoadTextFromFile {
 				stringBuilder.append(currentLineFromBuffer);
 			}
 		} catch (IOException e) {
+			// TODO if something Fails as crucial as this, i have to act accordingly - not
+			// just continue
 			logger.log(Level.SEVERE,
 					String.format("Text from file %s could not be loaded, %s", inputPath, e.getMessage()));
 		}
