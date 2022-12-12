@@ -10,7 +10,8 @@ public class Main {
 		StringBuilder stringBuilder = new LoadTextFromFile().loadTextFromFile(argumentInputOutputHolder.getInputPath());
 		HashMap<String, Integer> hashmap = new WordStatisticsCalculator()
 				.countWordsAndReturnHashmap(stringBuilder.toString());
-		String resultingXmlString; // CreateXmlFromHashmap
+		String resultingXmlString = new XmlFromHashmapGenerator().generateXmlFromHashmap(hashmap);
+		new WriteXmlToFile().writeXmlStringToFile(resultingXmlString, argumentInputOutputHolder.getOutputPath());
 	}
 
 }

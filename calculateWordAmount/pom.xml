@@ -5,26 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <description>This Application calculates the amount of Words inside a Text File and Exports the Result into an XML File. Import and Output file has to be Commandline Parameters		</description>
 <dependencies>
-	<dependency>
-  <groupId>javax.xml.bind</groupId>
-  <artifactId>jaxb-api</artifactId>
-  <version>2.3.0</version>
-</dependency>
-<dependency>
-  <groupId>com.sun.xml.bind</groupId>
-  <artifactId>jaxb-core</artifactId>
-  <version>2.3.0</version>
-</dependency>
-<dependency>
-  <groupId>com.sun.xml.bind</groupId>
-  <artifactId>jaxb-impl</artifactId>
-  <version>2.3.0</version>
-</dependency>
-<dependency>
-    <groupId>jakarta.xml.bind</groupId>
-    <artifactId>jakarta.xml.bind-api</artifactId>
-    <version>2.3.2</version>
-</dependency>
+
 
 <!-- Runtime, com.sun.xml.bind module -->
 <dependency>
@@ -34,5 +15,9 @@
 </dependency>
 </dependencies>
 
+<properties>
+   <maven.compiler.source>1.8</maven.compiler.source>
+   <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 
 </project>
