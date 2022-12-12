@@ -6,10 +6,11 @@
 //
 
 
-package calculateWordAmount.generatedFromXsdSchema;
+package generatedFromXsdSchema;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -118,7 +119,7 @@ public class Statistics {
         @XmlElement(required = true)
         protected String value;
         @XmlSchemaType(name = "unsignedByte")
-        protected short count;
+		protected int count;
 
         /**
          * Ruft den Wert der value-Eigenschaft ab.
@@ -148,7 +149,7 @@ public class Statistics {
          * Ruft den Wert der count-Eigenschaft ab.
          * 
          */
-        public short getCount() {
+		public int getCount() {
             return count;
         }
 
@@ -156,7 +157,7 @@ public class Statistics {
          * Legt den Wert der count-Eigenschaft fest.
          * 
          */
-        public void setCount(short value) {
+		public void setCount(int value) {
             this.count = value;
         }
 

@@ -6,7 +6,7 @@
 //
 
 
-package calculateWordAmount.generatedFromXsdSchema;
+package generatedFromXsdSchema;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
