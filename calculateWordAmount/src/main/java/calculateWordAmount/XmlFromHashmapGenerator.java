@@ -28,10 +28,12 @@ public class XmlFromHashmapGenerator {
 		try {
 			JAXBContext jaxbContext = JAXBContext.newInstance("generatedFromXsdSchema");
 			Marshaller xmlMarshaller = jaxbContext.createMarshaller();
+			xmlMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			xmlMarshaller.marshal(statistics, stringHolderToReturn);
 		} catch (JAXBException e) {
 			logger.log(Level.SEVERE,
 					String.format("Xml could not be generated from Statistics Object. Message: %s", e.getMessage()));
+			return null;
 
 		}
 		return stringHolderToReturn.toString();

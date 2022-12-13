@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class WriteXmlToFileTest {
 	Logger logger = Logger.getLogger(getClass().getName());

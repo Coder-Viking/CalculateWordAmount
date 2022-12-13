@@ -3,11 +3,8 @@ package calculateWordAmount;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class LoadTextFromFile {
-	Logger logger = Logger.getLogger(this.getClass().getName());
 
 	public StringBuilder loadTextFromFile(String inputPath) {
 		StringBuilder stringBuilder = new StringBuilder();
@@ -17,10 +14,8 @@ public class LoadTextFromFile {
 				stringBuilder.append(currentLineFromBuffer);
 			}
 		} catch (IOException e) {
-			// TODO if something Fails as crucial as this, i have to act accordingly - not
-			// just continue
-			logger.log(Level.SEVERE,
-					String.format("Text from file %s could not be loaded, %s", inputPath, e.getMessage()));
+			System.out.println(String.format("Text from file %s could not be loaded, %s", inputPath, e.getMessage()));
+			return null;
 		}
 		return stringBuilder;
 	}
